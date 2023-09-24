@@ -5,10 +5,13 @@ using UnityEngine;
 public class TileSpawn : MonoBehaviour
 {
     public GameObject tileToSpawn;
+    public GameObject tileToSpawn2;
+    public GameObject tileToSpawn3;
     public GameObject referenceObject;
     public float timeOffset = 0.4f;
     public float distanceBetweenTiles = 5.0F;
     public float randomValue = 0.8f;
+    public float randomValue2 = 0.8f;
     private Vector3 previousTilePosition;
     private float startTime;
     private Vector3 direction, mainDirection = new Vector3(0, 0, 1), otherDirection = new Vector3(1, 0, 0);
@@ -29,6 +32,11 @@ public class TileSpawn : MonoBehaviour
                 direction = mainDirection;
             else
             {
+                tileToSpawn = tileToSpawn2;
+                if (Random.value > randomValue2)
+                    tileToSpawn = tileToSpawn2;
+                if (Random.value < randomValue2)
+                    tileToSpawn = tileToSpawn3;
                 Vector3 temp = direction;
                 direction = otherDirection;
                 mainDirection = direction;
