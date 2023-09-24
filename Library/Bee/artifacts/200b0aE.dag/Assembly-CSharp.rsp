@@ -354,6 +354,7 @@
 "Assets/Scripts/EndMenue.cs"
 "Assets/Scripts/KeepScore.cs"
 "Assets/Scripts/PlayerMovement.cs"
+"Assets/Scripts/SpherePoints.cs"
 "Assets/Scripts/StartMenu.cs"
 "Assets/Scripts/TileSpawn.cs"
 "Assets/Scripts/TrailCamera.cs"
